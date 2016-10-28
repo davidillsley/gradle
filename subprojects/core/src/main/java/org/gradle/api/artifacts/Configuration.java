@@ -500,4 +500,8 @@ public interface Configuration extends FileCollection {
      */
     @Incubating
     void asBucket();
+
+    @Incubating
+    ConfigurationAttributesMatchingStrategy getAttributeMatchingStrategy();
+
 }
