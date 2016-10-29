@@ -55,6 +55,12 @@ fi"""
                 onDependencyCancel = FailureAction.CANCEL
             }
         }
+        dependency(Gradle_Branches_CommitPhase_macOSCommit_macOSCommitJava18.buildTypes.Gradle_Branches_CommitPhase_macOSCommit_macOSCommitJava18_1macOSCommitJava18) {
+            snapshot {
+                onDependencyFailure = FailureAction.CANCEL
+                onDependencyCancel = FailureAction.CANCEL
+            }
+        }
         dependency(Gradle_Branches_CommitPhase_LinuxCommit_LinuxCommitJava18.buildTypes.Gradle_Branches_CommitPhase_LinuxCommit_LinuxCommitJava18_2LinuxCommitJava18) {
             snapshot {
                 onDependencyFailure = FailureAction.CANCEL
