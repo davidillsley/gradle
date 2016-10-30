@@ -47,6 +47,7 @@ distributionTestTasks.all { DistributionTest task ->
                 reports.html.destination = file("${project.reporting.baseDir}/$name")
                 systemProperties['integTest.gradleHomeDir'] = rootProject.intTestImage.destinationDir.absolutePath
                 systemProperties['integTest.gradleUserHomeDir'] = rootProject.file('intTestHomeDir').absolutePath
+                systemProperties['integTest.gradleVersionUnderTest'] = version
                 systemProperties['integTest.libsRepo'] = rootProject.file('build/repo')
                 systemProperties['integTest.toolingApiShadedJarDir'] = rootProject.project(':toolingApi').shadedJar.outputDir
 

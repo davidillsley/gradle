@@ -75,7 +75,7 @@ public class IntegrationTestBuildContext {
     }
 
     public GradleVersion getVersion() {
-        return GradleVersion.current();
+        return GradleVersion.version(System.getProperty("integTest.gradleVersionUnderTest", GradleVersion.current().getVersion()));
     }
 
     public TestFile getFatToolingApiJar() {
